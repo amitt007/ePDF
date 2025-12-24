@@ -1,0 +1,117 @@
+.home {
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+    padding: var(--spacing-4xl) 0;
+    background: linear-gradient(180deg, var(--color-gray-50) 0%, var(--color-neutral-white) 100%);
+    text-align: center;
+}
+
+[data-theme="dark"] .hero {
+    background: linear-gradient(180deg, var(--color-gray-100) 0%, var(--color-neutral-white) 100%);
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: var(--font-extrabold);
+    line-height: 1.1;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-neutral-black);
+}
+
+.hero-subtitle {
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    color: var(--color-gray-600);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-2xl);
+    line-height: 1.6;
+}
+
+.hero-cta {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Tools Section */
+.tools-section {
+    padding: var(--spacing-4xl) 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    margin-bottom: var(--spacing-3xl);
+    color: var(--color-neutral-black);
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+@media (max-width: 768px) {
+    .tools-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+}
+
+/* Features Section */
+.features-section {
+    padding: var(--spacing-4xl) 0;
+    background: var(--color-gray-50);
+}
+
+[data-theme="dark"] .features-section {
+    background: var(--color-gray-100);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-2xl);
+}
+
+.feature-card {
+    text-align: center;
+    padding: var(--spacing-2xl);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: var(--font-bold);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-neutral-black);
+}
+
+.feature-description {
+    font-size: 1rem;
+    color: var(--color-gray-600);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .tools-section,
+    .features-section {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+}

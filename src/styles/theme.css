@@ -1,0 +1,158 @@
+:root {
+  /* Brand Colors - Red, Orange, White, Black */
+  --color-primary-red: #E53935;
+  /* Vibrant red - Primary CTAs */
+  --color-primary-orange: #FF6F00;
+  /* Energetic orange - Accents */
+  --color-neutral-white: #FFFFFF;
+  /* Clean backgrounds */
+  --color-neutral-black: #1A1A1A;
+  /* Text & dark elements */
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #E53935 0%, #FF6F00 100%);
+  --gradient-subtle: linear-gradient(135deg, rgba(229, 57, 53, 0.1) 0%, rgba(255, 111, 0, 0.1) 100%);
+  --gradient-hover: linear-gradient(135deg, #C62828 0%, #E65100 100%);
+
+  /* Shades for depth */
+  --color-red-dark: #C62828;
+  --color-red-light: #EF5350;
+  --color-red-lightest: #FFEBEE;
+  --color-orange-dark: #E65100;
+  --color-orange-light: #FF8F00;
+  --color-orange-lightest: #FFF3E0;
+
+  /* Neutral grays */
+  --color-gray-50: #FAFAFA;
+  --color-gray-100: #F5F5F5;
+  --color-gray-200: #EEEEEE;
+  --color-gray-300: #E0E0E0;
+  --color-gray-400: #BDBDBD;
+  --color-gray-500: #9E9E9E;
+  --color-gray-600: #757575;
+  --color-gray-700: #616161;
+  --color-gray-800: #424242;
+  --color-gray-900: #212121;
+
+  /* Shadows for premium feel */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.2);
+  --shadow-2xl: 0 24px 64px rgba(0, 0, 0, 0.25);
+  --shadow-gradient: 0 8px 24px rgba(229, 57, 53, 0.25);
+  --shadow-orange: 0 8px 24px rgba(255, 111, 0, 0.25);
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  --font-display: 'Outfit', 'Inter', sans-serif;
+
+  /* Font Weights */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+
+  /* Spacing Scale (8px base) */
+  --spacing-xs: 0.25rem;
+  /* 4px */
+  --spacing-sm: 0.5rem;
+  /* 8px */
+  --spacing-md: 1rem;
+  /* 16px */
+  --spacing-lg: 1.5rem;
+  /* 24px */
+  --spacing-xl: 2rem;
+  /* 32px */
+  --spacing-2xl: 3rem;
+  /* 48px */
+  --spacing-3xl: 4rem;
+  /* 64px */
+  --spacing-4xl: 6rem;
+  /* 96px */
+
+  /* Border Radius */
+  --radius-none: 0;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Z-index layers */
+  --z-base: 1;
+  --z-dropdown: 10;
+  --z-sticky: 100;
+  --z-modal: 1000;
+  --z-tooltip: 1100;
+}
+
+/* Dark Mode Support - Enhanced Contrast */
+[data-theme="dark"] {
+  /* Darker background for true dark mode */
+  --color-neutral-white: #0F0F0F;
+  /* Much darker background */
+  --color-neutral-black: #F5F5F5;
+  /* Brighter text for contrast */
+
+  /* Richer gray scale with better contrast */
+  --color-gray-50: #1C1C1C;
+  /* Slightly lighter than bg */
+  --color-gray-100: #242424;
+  /* Card backgrounds */
+  --color-gray-200: #2E2E2E;
+  /* Borders */
+  --color-gray-300: #404040;
+  /* Hover states */
+  --color-gray-400: #5E5E5E;
+  /* Disabled text */
+  --color-gray-500: #8B8B8B;
+  /* Secondary text */
+  --color-gray-600: #B0B0B0;
+  /* Primary text (lighter) */
+  --color-gray-700: #CECECE;
+  /* Headings */
+  --color-gray-800: #E0E0E0;
+  /* Important text */
+  --color-gray-900: #F0F0F0;
+  /* Brightest elements */
+
+  /* Brighter accent colors for visibility */
+  --color-primary-red: #FF5252;
+  /* Brighter red */
+  --color-primary-orange: #FF9100;
+  /* Brighter orange */
+  --color-red-light: #FF6B6B;
+  --color-orange-light: #FFA726;
+
+  /* Adjusted lightest colors for dark mode */
+  --color-red-lightest: #2A1515;
+  /* Dark red tint */
+  --color-orange-lightest: #2A1F0F;
+  /* Dark orange tint */
+
+  /* Enhanced gradients for dark mode */
+  --gradient-primary: linear-gradient(135deg, #FF5252 0%, #FF9100 100%);
+  --gradient-subtle: linear-gradient(135deg, rgba(255, 82, 82, 0.15) 0%, rgba(255, 145, 0, 0.15) 100%);
+  --gradient-hover: linear-gradient(135deg, #FF6B6B 0%, #FFA726 100%);
+
+  /* Stronger shadows for depth in dark mode */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.7);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.8);
+  --shadow-2xl: 0 24px 64px rgba(0, 0, 0, 0.9);
+  --shadow-gradient: 0 8px 24px rgba(255, 82, 82, 0.3);
+  --shadow-orange: 0 8px 24px rgba(255, 145, 0, 0.3);
+}

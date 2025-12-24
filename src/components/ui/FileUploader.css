@@ -1,0 +1,97 @@
+.file-uploader-container {
+    width: 100%;
+}
+
+.file-uploader {
+    position: relative;
+    border: 2px dashed var(--color-gray-300);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-3xl);
+    text-align: center;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    background: var(--color-gray-50);
+}
+
+.file-uploader:hover:not(.disabled) {
+    border-color: var(--color-primary-orange);
+    background: var(--color-orange-lightest);
+}
+
+.file-uploader.dragging {
+    border-color: var(--color-primary-red);
+    border-style: solid;
+    background: var(--gradient-subtle);
+    transform: scale(1.02);
+}
+
+.file-uploader.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.file-uploader-content {
+    pointer-events: none;
+}
+
+.file-uploader-icon {
+    color: var(--color-primary-orange);
+    margin: 0 auto var(--spacing-md);
+    transition: all var(--transition-base);
+}
+
+.file-uploader.dragging .file-uploader-icon {
+    color: var(--color-primary-red);
+    transform: scale(1.1);
+}
+
+.file-uploader-title {
+    font-size: 1.25rem;
+    font-weight: var(--font-semibold);
+    color: var(--color-neutral-black);
+    margin-bottom: var(--spacing-sm);
+}
+
+.file-uploader-subtitle {
+    font-size: 0.9375rem;
+    color: var(--color-gray-600);
+    margin: 0;
+}
+
+.file-uploader-error {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-md);
+    background: var(--color-red-lightest);
+    border: 1px solid var(--color-primary-red);
+    border-radius: var(--radius-md);
+    color: var(--color-red-dark);
+    font-size: 0.875rem;
+    animation: fadeIn var(--transition-base) ease-out;
+}
+
+.file-previews {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .file-uploader {
+        padding: var(--spacing-2xl);
+    }
+
+    .file-uploader-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .file-uploader-title {
+        font-size: 1.125rem;
+    }
+}
